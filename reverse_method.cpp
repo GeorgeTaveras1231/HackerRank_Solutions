@@ -15,12 +15,15 @@ Node* Reverse(Node* head)
         {
             //list is empty
             return NULL;
-        }else if(head->next == NULL)
+        }
+        else if(head->next == NULL)
         {
             //list only has one link
             //or end of the list in the recursive loop
             return head;
-        }else{
+        }
+        else
+        {
             Node* prev = head;//previous node placeholder
             Node* iter = head-> next;//current node placeholder
 
